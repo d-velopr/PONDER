@@ -484,3 +484,114 @@ a {
         max-width:1220px
     }
 }
+/* === Dark Theme Overrides === */
+:root{
+  --bg: #000;
+  --bg-2: #0f0f10;      /* cards, dropdowns */
+  --text: #fff;
+  --muted: #b9b9b9;
+  --border: #222;
+  --link: #eaeaea;
+  --link-muted: #c7c7c7;
+  --input-bg: #111;
+  --input-text: #fff;
+  --input-border: #2a2a2a;
+}
+
+/* Global */
+html, body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+a { color: var(--link); }
+a:hover { color: #fff; }
+
+/* Bootstrap helpers on dark */
+.text-dark, .text-black-50, .link-dark { color: var(--link-muted) !important; }
+.bg-white, .bg-body-tertiary, .footer-copyright {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+/* Navbar */
+.navbar { background: var(--bg) !important; }
+.navbar .nav-link { color: var(--link-muted) !important; }
+.navbar .nav-link.active, .navbar .nav-link:hover { color: #fff !important; }
+.navbar .navbar-brand, .navbar i { color: var(--text) !important; }
+
+/* Cards / product tiles */
+.card, .card-footer, .card-body {
+  background: transparent !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+.card-title, .card-text, .card h6 { color: var(--text) !important; }
+
+/* Buttons */
+.btn-light { 
+  background: #fff !important; 
+  color: #000 !important; 
+  border: none;
+}
+.btn-dark { 
+  background: #111 !important; 
+  color: #fff !important; 
+  border-color: #333 !important;
+}
+
+/* Forms */
+.form-control, .form-select {
+  background: var(--input-bg) !important;
+  color: var(--input-text) !important;
+  border: 1px solid var(--input-border) !important;
+}
+.form-control::placeholder { color: #888; }
+.input-group .btn { border-color: var(--input-border) !important; }
+
+/* Dropdowns / menus (template had white) */
+.dropdown-menu, #mega-menu .menu, #mega-menu .drop-menu {
+  background: var(--bg-2) !important;
+  border-color: var(--border) !important;
+  color: var(--text) !important;
+}
+#mega-menu .menu li, #mega-menu .drop-menu li a {
+  background: var(--bg-2) !important;
+  color: var(--muted) !important;
+}
+#mega-menu .menu li:hover, .mega-menu .dropdown-menu li a:hover {
+  color: #fff !important;
+  border-left-color: #fff !important;
+}
+
+/* Links in footer */
+.footer-copyright a {
+  color: var(--link-muted) !important;
+}
+.footer-copyright a:hover { color: #fff !important; }
+
+/* Borders / dividers */
+.border-bottom, .border-top, .border {
+  border-color: var(--border) !important;
+}
+
+/* Icons inside “social-btn” */
+.social-btn { color: var(--text) !important; }
+
+/* Swiper bullets (already black) – switch to light */
+.swiper-pagination-bullet-active, .swiper-pagination-bullet {
+  background: #ddd !important;
+}
+
+/* Overlays already dark; keep content readable */
+.overlay { color: #fff !important; }
+
+/* Brand/collection headers if you use them */
+.brand-header, .bg-collections, .bg-single-collection {
+  filter: brightness(0.7) contrast(1.05);
+}
+
+/* Respect system preference (optional) */
+@media (prefers-color-scheme: light) {
+  :root { --bg: #fff; --text:#000; --link:#111; --link-muted:#555; --border:#e5e5e5; --input-bg:#fff; --input-text:#000; --input-border:#d9d9d9; }
+}
