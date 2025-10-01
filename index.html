@@ -94,7 +94,10 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- Google Analytics -->
     <!-- Google tag (gtag.js) -->
-    <script async src=""></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-TRVCPKTK6T"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -102,7 +105,7 @@
       }
       gtag("js", new Date());
 
-      gtag("config", "G-HWNCS54EPF");
+      gtag("config", "G-TRVCPKTK6T");
     </script>
   </head>
   <body>
@@ -464,14 +467,17 @@
         e.preventDefault();
         const email = document.getElementById("email").value;
 
-        fetch("https://script.google.com/macros/s//exec", {
-          method: "POST",
-          mode: "no-cors",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ email }),
-        });
+        fetch(
+          "https://script.google.com/macros/s/AKfycbzpUJX2SdtYf5L4rqEbIJVUE1N7XjAs7-er4eQO3FQ4CefbKdjSvojV7SgnTFo5kEQb/exec",
+          {
+            method: "POST",
+            mode: "no-cors",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ email }),
+          }
+        );
 
         status.innerText = "Thanks for subscribing!";
         form.reset();
