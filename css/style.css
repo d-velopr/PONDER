@@ -635,3 +635,22 @@ a:hover { color: #fff; }
 .product:focus-within .product-image-swap .primary {
   opacity: 0;
 }
+/* Hover effect for buttons */
+.btn-hov:hover,
+.btn-hov:focus {
+  background-color: #fff !important;   /* brighten background */
+  color: #000 !important;              /* invert text/icon color */
+  border-color: #fff !important;       /* light border */
+  box-shadow: 0 0 10px rgba(255,255,255,0.5); /* subtle glow */
+  transition: all 0.25s ease-in-out;
+}
+
+/* For outline-dark buttons (size, quantity selectors, etc.) */
+.btn-outline-dark:hover,
+.btn-outline-dark:focus {
+  background-color: #fff !important;
+  color: #000 !important;
+  border-color: #fff !important;
+  box-shadow: 0 0 10px rgba(255,255,255,0.4);
+}
+
