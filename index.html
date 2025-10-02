@@ -90,6 +90,18 @@
       name="msapplication-TileImage"
       content="img/fav/ms-icon-144x144.png"
     />
+    <!--Pre load img's for hover swap-->
+    <link rel="preload" as="image" href="img/in-stock/inStock1-backShirt.png" />
+    <link
+      rel="preload"
+      as="image"
+      href="img/in-stock/inStock1-purpleTShirt-back.png"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="img/in-stock/inStock2-blackTShirt-back.png"
+    />
     <meta name="theme-color" content="#000000" />
     <!-- Google Analytics -->
     <!-- Google tag (gtag.js) -->
@@ -217,19 +229,19 @@
         </div>
       </div>
       <div class="row g-4">
-        <!-- In Stock Product #1 (Black Shirt)-->
+        <!-- In Stock Product #1 (Purple Spider T-shirt)-->
         <div class="col-6 col-md-4 col-lg-3 col-xl-custom-5">
           <div class="card bg-transparent border-0 rounded-0 h-100 product">
             <div class="position-relative">
               <div class="product-image-swap">
                 <img
-                  src="img/in-stock/inStock1-shirt.png"
+                  src="img/in-stock/inStock1-purpleTShirt-front.png"
                   class="card-img-top rounded-0 primary"
                   alt="Black T-Shirt"
                   loading="lazy"
                 />
                 <img
-                  src="img/in-stock/inStock2-shirt-back.png"
+                  src="img/in-stock/inStock1-purpleTShirt-back.png"
                   class="card-img-top rounded-0 secondary"
                   alt=""
                   loading="lazy"
@@ -259,10 +271,138 @@
               </div>
             </div>
             <div class="card-body pb-0 px-0">
-              <h6 class="card-title text-truncate mb-1">Black T-Shirt</h6>
+              <h6 class="card-title text-truncate mb-1">Purple Spider Tee</h6>
               <p class="card-text text-secondary-emphasis mb-0">
-                Sizes Available: M L XL
+                Sizes Available: S M L XL
               </p>
+            </div>
+            <div
+              class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between px-0"
+            >
+              <h6 class="mb-0">$39.99</h6>
+              <a
+                href="#"
+                class="link-dark opacity-0 overlay"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="SEND"
+              >
+                <i class="ri-send-plane-2-line ri-lg"></i>
+              </a>
+            </div>
+            <a href="inStock-pages/stock1.html" class="stretched-link"></a>
+          </div>
+        </div>
+
+        <!-- In Stock Product #2 (Black Spider T-shirt)-->
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom-5">
+          <div class="card bg-transparent border-0 rounded-0 h-100 product">
+            <div class="position-relative">
+              <div class="product-image-swap">
+                <img
+                  src="img/in-stock/inStock2-blackTShirt-front.png"
+                  class="card-img-top rounded-0 primary"
+                  alt="Black T-Shirt"
+                  loading="lazy"
+                />
+                <img
+                  src="img/in-stock/inStock2-blackTShirt-back.png"
+                  class="card-img-top rounded-0 secondary"
+                  alt=""
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+              </div>
+              <div
+                class="overlay position-absolute start-0 end-0 top-0 bottom-0 opacity-0 bg-dark bg-opacity-75 d-flex align-items-center h-100"
+              >
+                <a
+                  href="#"
+                  class="link-light position-absolute top-0 end-0 m-3"
+                ></a>
+                <div
+                  class="product-content position-absolute bottom-0 p-3 w-100"
+                >
+                  <a
+                    href="#"
+                    class="btn btn-light rounded-0 d-flex align-items-center justify-content-between"
+                  >
+                    <i class="ri-shopping-bag-3-line"></i>
+                    <div>CHECKOUT</div>
+                    <span class="px-1"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body pb-0 px-0">
+              <h6 class="card-title text-truncate mb-1">
+                Black Spider T-shirt
+              </h6>
+              <p class="card-text text-secondary-emphasis mb-0">
+                Sizes Available: S M L XL
+              </p>
+            </div>
+            <div
+              class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between px-0"
+            >
+              <h6 class="mb-0">$39.99</h6>
+              <a
+                href="#"
+                class="link-dark opacity-0 overlay"
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="SEND"
+              >
+                <i class="ri-send-plane-2-line ri-lg"></i>
+              </a>
+            </div>
+            <a href="inStock-pages/stock2.html" class="stretched-link"></a>
+          </div>
+        </div>
+
+        <!-- In Stock Product #3 (Black T-Shirt)-->
+        <div class="col-6 col-md-4 col-lg-3 col-xl-custom-5">
+          <div class="card bg-transparent border-0 rounded-0 h-100 product">
+            <div class="position-relative">
+              <div class="product-image-swap">
+                <img
+                  src="img/in-stock/inStock1-shirt.png"
+                  class="card-img-top rounded-0 primary"
+                  alt="Black T-Shirt"
+                  loading="lazy"
+                />
+                <img
+                  src="img/in-stock/inStock1-backShirt.png"
+                  class="card-img-top rounded-0 secondary"
+                  alt=""
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+              </div>
+              <div
+                class="overlay position-absolute start-0 end-0 top-0 bottom-0 opacity-0 bg-dark bg-opacity-75 d-flex align-items-center h-100"
+              >
+                <a
+                  href="#"
+                  class="link-light position-absolute top-0 end-0 m-3"
+                ></a>
+                <div
+                  class="product-content position-absolute bottom-0 p-3 w-100"
+                >
+                  <a
+                    href="#"
+                    class="btn btn-light rounded-0 d-flex align-items-center justify-content-between"
+                  >
+                    <i class="ri-shopping-bag-3-line"></i>
+                    <div>CHECKOUT</div>
+                    <span class="px-1"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body pb-0 px-0">
+              <h6 class="card-title text-truncate mb-1">Black T-Shirt</h6>
+              <p class="card-text text-secondary-emphasis mb-0">S M L XL</p>
             </div>
             <div
               class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between px-0"
@@ -278,20 +418,29 @@
                 <i class="ri-send-plane-2-line ri-lg"></i>
               </a>
             </div>
-            <a href="inStock-pages/stock1.html" class="stretched-link"></a>
+            <a href="inStock-pages/stock3.html" class="stretched-link"></a>
           </div>
         </div>
 
-        <!-- In Stock Product #2 (Black Hoodie)-->
+        <!-- In Stock Product #4 (Black Hoodie & Denim Jeans)-->
         <div class="col-6 col-md-4 col-lg-3 col-xl-custom-5">
           <div class="card bg-transparent border-0 rounded-0 h-100 product">
             <div class="position-relative">
-              <img
-                src="img/in-stock/inStock2-hoodie.png"
-                class="card-img-top rounded-0"
-                alt="Black Hoodie"
-                loading="lazy"
-              />
+              <div class="product-image-swap">
+                <img
+                  src="img/in-stock/inStock2-hoodie.png"
+                  class="card-img-top rounded-0 primary"
+                  alt="Black T-Shirt"
+                  loading="lazy"
+                />
+                <img
+                  src="img/in-stock/inStock3-pants.png"
+                  class="card-img-top rounded-0 secondary"
+                  alt=""
+                  loading="lazy"
+                  aria-hidden="true"
+                />
+              </div>
               <div
                 class="overlay position-absolute start-0 end-0 top-0 bottom-0 opacity-0 bg-dark bg-opacity-75 d-flex align-items-center h-100"
               >
@@ -315,124 +464,12 @@
             </div>
             <div class="card-body pb-0 px-0">
               <h6 class="card-title text-truncate mb-1">Black Hoodie</h6>
-              <p class="card-text text-secondary-emphasis mb-0">
-                Sizes Available: M L XL
-              </p>
+              <p class="card-text text-secondary-emphasis mb-0">S M L XL</p>
             </div>
             <div
               class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between px-0"
             >
               <h6 class="mb-0">$69.99</h6>
-              <a
-                href="#"
-                class="link-dark opacity-0 overlay"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-title="SEND"
-              >
-                <i class="ri-send-plane-2-line ri-lg"></i>
-              </a>
-            </div>
-            <a href="inStock-pages/stock2.html" class="stretched-link"></a>
-          </div>
-        </div>
-
-        <!-- In Stock Product #3 (Denim Jeans)-->
-        <div class="col-6 col-md-4 col-lg-3 col-xl-custom-5">
-          <div class="card bg-transparent border-0 rounded-0 h-100 product">
-            <div class="position-relative">
-              <img
-                src="img/in-stock/inStock3-pants.png"
-                class="card-img-top rounded-0"
-                alt="Denim Jeans"
-                loading="lazy"
-              />
-              <div
-                class="overlay position-absolute start-0 end-0 top-0 bottom-0 opacity-0 bg-dark bg-opacity-75 d-flex align-items-center h-100"
-              >
-                <a
-                  href="#"
-                  class="link-light position-absolute top-0 end-0 m-3"
-                ></a>
-                <div
-                  class="product-content position-absolute bottom-0 p-3 w-100"
-                >
-                  <a
-                    href="#"
-                    class="btn btn-light rounded-0 d-flex align-items-center justify-content-between"
-                  >
-                    <i class="ri-shopping-bag-3-line"></i>
-                    <div>CHECKOUT</div>
-                    <span class="px-1"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card-body pb-0 px-0">
-              <h6 class="card-title text-truncate mb-1">Denim Jeans</h6>
-              <p class="card-text text-secondary-emphasis mb-0">
-                Sizes Available: 32-40
-              </p>
-            </div>
-            <div
-              class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between px-0"
-            >
-              <h6 class="mb-0">$79.99</h6>
-              <a
-                href="#"
-                class="link-dark opacity-0 overlay"
-                data-bs-toggle="tooltip"
-                data-bs-placement="bottom"
-                data-bs-title="SEND"
-              >
-                <i class="ri-send-plane-2-line ri-lg"></i>
-              </a>
-            </div>
-            <a href="inStock-pages/stock3.html" class="stretched-link"></a>
-          </div>
-        </div>
-
-        <!-- In Stock Product #4 (Sneakers)-->
-        <div class="col-6 col-md-4 col-lg-3 col-xl-custom-5">
-          <div class="card bg-transparent border-0 rounded-0 h-100 product">
-            <div class="position-relative">
-              <img
-                src="img/in-stock/inStock4-shoes.png"
-                class="card-img-top rounded-0"
-                alt="Sneakers"
-                loading="lazy"
-              />
-              <div
-                class="overlay position-absolute start-0 end-0 top-0 bottom-0 opacity-0 bg-dark bg-opacity-75 d-flex align-items-center h-100"
-              >
-                <a
-                  href="#"
-                  class="link-light position-absolute top-0 end-0 m-3"
-                ></a>
-                <div
-                  class="product-content position-absolute bottom-0 p-3 w-100"
-                >
-                  <a
-                    href="#"
-                    class="btn btn-light rounded-0 d-flex align-items-center justify-content-between"
-                  >
-                    <i class="ri-shopping-bag-3-line"></i>
-                    <div>CHECKOUT</div>
-                    <span class="px-1"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card-body pb-0 px-0">
-              <h6 class="card-title text-truncate mb-1">Green Sneakers</h6>
-              <p class="card-text text-secondary-emphasis mb-0">
-                Sizes Available: 8.5 , 9 , 9.5 , 10
-              </p>
-            </div>
-            <div
-              class="card-footer bg-transparent border-0 d-flex align-items-center justify-content-between px-0"
-            >
-              <h6 class="mb-0">$99.99</h6>
               <a
                 href="#"
                 class="link-dark opacity-0 overlay"
