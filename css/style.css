@@ -663,3 +663,23 @@ a:hover { color: #fff; }
   box-shadow: 0 0 10px rgba(255,255,255,0.4);
 }
 
+/* Mobile adjustments for Instagram profile */
+@media (max-width: 768px) {
+  .brand-img {
+    margin: 0 auto !important;     /* centers the circle image */
+    display: flex;
+    justify-content: center;
+  }
+
+  .circle-img {
+    margin: 0 auto !important;     /* ensures the actual <img> is centered */
+    display: block;
+  }
+
+  .d-md-flex.d-grid.align-items-center.gap-4.text-center.text-md-start {
+    justify-content: center !important; /* keep the text centered */
+    text-align: center !important;
+  }
+}
+
+
