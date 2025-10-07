@@ -206,34 +206,31 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
-                    src="../img/product-details/blackSpider-Stock2.png"
+                    src="../img/in-stock/ponderfaceSticker-2.png"
                     alt="view-1"
                     class="img-fluid"
                   />
                 </div>
+                <!--
                 <div class="swiper-slide">
                   <img
-                    src="../img/product-details/blackSpider-Stock2-back.png"
+                    src="../img/in-stock/ponderfaceSticker-2.png"
                     alt="view-2"
                     class="img-fluid"
                   />
                 </div>
-              </div>
+              --></div>
             </div>
           </div>
           <!-- product description-->
           <div class="col-lg-6 col-12">
             <div class="sticky-sidebar p-5">
               <div class="mb-4">
-                <p class="mb-2">Relaxed Fit</p>
-                <h1 class="fw-bold">Black Spider T Shirt</h1>
-                <p class="pb-2">
-                  A comfortable tee with a striking spider web graphic, made
-                  using reclaimed cotton waste to cut down on new materials
-                  while keeping things comfortable and easy to wear.
-                </p>
+                <p class="mb-2"></p>
+                <h1 class="fw-bold">Ponder Face Sticker</h1>
+                <p class="pb-2"></p>
                 <h2 class="fw-bold mb-0">
-                  $39.99
+                  $4.99
                   <span class="fw-normal fs-6"
                     >(Shipping + Handling Incl.)</span
                   >
@@ -242,77 +239,6 @@
               <div
                 class="d-flex align-items-center gap-4 mb-5 product-detail-select-size"
               >
-                <div>
-                  <h6 class="fw-bold pb-1">Select Size</h6>
-                  <div class="d-flex align-items-center gap-3">
-                    <div>
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio1ss"
-                      />
-                      <label
-                        class="btn btn-outline-dark rounded-0 border-2"
-                        for="btnradio1ss"
-                        >S</label
-                      >
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio2ss"
-                        checked
-                      />
-                      <label
-                        class="btn btn-outline-dark rounded-0 border-2"
-                        for="btnradio2ss"
-                        >M</label
-                      >
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio3"
-                      />
-                      <label
-                        class="btn btn-outline-dark rounded-0 border-2"
-                        for="btnradio3"
-                        >L</label
-                      >
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio4"
-                      />
-                      <label
-                        class="btn btn-outline-dark rounded-0 border-2"
-                        for="btnradio4"
-                        >XL</label
-                      >
-                    </div>
-                    <div>
-                      <input
-                        type="radio"
-                        class="btn-check"
-                        name="btnradio"
-                        id="btnradio5"
-                      />
-                      <label
-                        class="btn btn-outline-dark rounded-0 border-2"
-                        for="btnradio5"
-                        >XXL</label
-                      >
-                    </div>
-                  </div>
-                </div>
                 <div>
                   <h6 class="fw-bold pb-1">Select Quantity</h6>
                   <div
@@ -351,34 +277,29 @@
         </div>
       </div>
     </div>
-    <!-- Sizes Links Script-->
+    <!-- Quantity Links - Script -->
     <script>
-      // Map each size to its purchase link
-      const sizeLinks = {
-        btnradio1ss: "https://link-for-S.com", // S
-        btnradio2ss: "https://link-for-M.com", // M
-        btnradio3: "https://link-for-L.com", // L
-        btnradio4: "https://link-for-XL.com", // XL
-        btnradio5: "https://link-for-XXL.com", // XXL
+      // Map each quantity to its Stripe purchase link
+      const quantityLinks = {
+        1: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
+        2: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
+        3: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
+        4: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
+        5: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
       };
 
       const purchaseBtn = document.getElementById("purchaseBtn");
-      const radios = document.querySelectorAll("input[name='btnradio']");
+      const quantityInput = document.querySelector(".count");
 
       purchaseBtn.addEventListener("click", function (e) {
-        e.preventDefault(); // prevent default anchor action
-        let selectedSize = null;
+        e.preventDefault(); // Prevent default anchor action
 
-        radios.forEach((radio) => {
-          if (radio.checked) {
-            selectedSize = radio.id;
-          }
-        });
+        const quantity = quantityInput.value.trim();
 
-        if (selectedSize && sizeLinks[selectedSize]) {
-          window.location.href = sizeLinks[selectedSize]; // redirect
+        if (quantityLinks[quantity]) {
+          window.location.href = quantityLinks[quantity]; // Redirect based on quantity
         } else {
-          alert("Please select a size before purchasing!");
+          alert("Please select a valid quantity before purchasing!");
         }
       });
     </script>
@@ -408,7 +329,7 @@
                   <i class="ri-checkbox-circle-fill ri-sm ms-2"></i>
                 </h4>
                 <p class="mb-0">
-                  PONDER is a sustainable fashion brand that creates .
+                  PONDER is a sustainable art brand that creates .
                 </p>
                 <p class="mb-0">PONDER the world around you .</p>
 
