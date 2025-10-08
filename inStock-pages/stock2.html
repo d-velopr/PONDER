@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../img/logo3.png" />
-    <title>PONDER | Product Detail</title>
+    <title>Ponder Halloween Sticker | PONDER</title>
     <meta name="description" content="dvelupmint" />
     <meta name="keywords" content="dvelupmint" />
     <!-- Bootstrap Css -->
@@ -196,7 +196,7 @@
       </div>
     </nav>
     <!-- body -->
-    <!-- product (Black Spider T-Shirt)-->
+    <!-- product (Ponder Face Halloween Sticker - 2)-->
     <div>
       <div class="container-fluid p-0">
         <div class="row g-0">
@@ -238,35 +238,12 @@
               </div>
               <div
                 class="d-flex align-items-center gap-4 mb-5 product-detail-select-size"
-              >
-                <div>
-                  <h6 class="fw-bold pb-1">Select Quantity</h6>
-                  <div
-                    class="btn-group border border-2 border-dark rounded-0 number w-50"
-                  >
-                    <a
-                      class="btn btn-outline-dark rounded-0 border-0 border-end border-2 border-dark minus"
-                    >
-                      <i class="ri-subtract-fill"></i>
-                    </a>
-                    <input
-                      class="form-control border-0 rounded-0 text-center p-0 count"
-                      type="text"
-                      value="1"
-                    />
-                    <a
-                      class="btn btn-outline-dark rounded-0 border-0 border-start border-2 border-dark plus"
-                    >
-                      <i class="ri-add-fill"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
+              ></div>
               <div class="row g-4 mb-5">
                 <div class="col">
                   <a
                     id="purchaseBtn"
-                    href="#"
+                    href="https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01"
                     class="btn btn-dark btn-hov py-2 rounded-0 border-2 w-50"
                     >PURCHASE NOW</a
                   >
@@ -277,32 +254,6 @@
         </div>
       </div>
     </div>
-    <!-- Quantity Links - Script -->
-    <script>
-      // Map each quantity to its Stripe purchase link
-      const quantityLinks = {
-        1: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
-        2: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
-        3: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
-        4: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
-        5: "https://buy.stripe.com/5kQ5kD6SA2En6AIgTgasg01",
-      };
-
-      const purchaseBtn = document.getElementById("purchaseBtn");
-      const quantityInput = document.querySelector(".count");
-
-      purchaseBtn.addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent default anchor action
-
-        const quantity = quantityInput.value.trim();
-
-        if (quantityLinks[quantity]) {
-          window.location.href = quantityLinks[quantity]; // Redirect based on quantity
-        } else {
-          alert("Please select a valid quantity before purchasing!");
-        }
-      });
-    </script>
 
     <!-- Instagram Profile -->
     <section class="py-4">
