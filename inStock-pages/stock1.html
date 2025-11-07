@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" href="../img/logo3.png" />
-    <title>Purple Skull Sticker | PONDER</title>
+    <title>PONDER | Wolf Skull T-Shirt Grey</title>
     <meta name="description" content="dvelupmint" />
     <meta name="keywords" content="dvelupmint" />
     <!-- Bootstrap Css -->
@@ -190,7 +190,7 @@
       </div>
     </nav>
     <!-- body -->
-    <!-- product (Sticker 1)-->
+    <!-- product (Wolf Skull T-Shirt Grey)-->
     <div>
       <div class="container-fluid p-0">
         <div class="row g-0">
@@ -200,27 +200,27 @@
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
-                    src="../img/in-stock/skullSticker-1.png"
+                    src="../img/in-stock/wolfskullGreyTshirt.png"
                     alt="view-1"
                     class="img-fluid"
                   />
                 </div>
-                <!--
-                <div class="swiper-slide">
-                  <img src="../img/na.png" alt="view-2" class="img-fluid" />
-                </div>
-              --></div>
+              </div>
             </div>
           </div>
           <!-- product description-->
           <div class="col-lg-6 col-12">
             <div class="sticky-sidebar p-5">
               <div class="mb-4">
-                <p class="mb-2"></p>
-                <h1 class="fw-bold">Skull Sticker</h1>
-                <p class="pb-2">Size Available : 3" x 3"</p>
+                <p class="mb-2">Relaxed Fit</p>
+                <h1 class="fw-bold">Wolf Skull T-Shirt Grey</h1>
+                <p class="pb-2">
+                  The fibre is produced using reclaimed cottom waste, mainly
+                  from the manufacture of other cotton garments, thus reducing
+                  the production of virgin raw materials and etc...
+                </p>
                 <h2 class="fw-bold mb-0">
-                  $4.99
+                  $45.00
                   <span class="fw-normal fs-6"
                     >(Shipping + Handling Incl.)</span
                   >
@@ -228,13 +228,86 @@
               </div>
               <div
                 class="d-flex align-items-center gap-4 mb-5 product-detail-select-size"
-              ></div>
+              >
+                <div>
+                  <h6 class="fw-bold pb-1">Select Size</h6>
+                  <div class="d-flex align-items-center gap-3">
+                    <div>
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio1ss"
+                      />
+                      <label
+                        class="btn btn-outline-dark rounded-0 border-2"
+                        for="btnradio1ss"
+                        >S</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio2ss"
+                        checked
+                      />
+                      <label
+                        class="btn btn-outline-dark rounded-0 border-2"
+                        for="btnradio2ss"
+                        >M</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio3"
+                      />
+                      <label
+                        class="btn btn-outline-dark rounded-0 border-2"
+                        for="btnradio3"
+                        >L</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio4"
+                      />
+                      <label
+                        class="btn btn-outline-dark rounded-0 border-2"
+                        for="btnradio4"
+                        >XL</label
+                      >
+                    </div>
+                    <div>
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="btnradio"
+                        id="btnradio5"
+                      />
+                      <label
+                        class="btn btn-outline-dark rounded-0 border-2"
+                        for="btnradio5"
+                        >XXL</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="row g-4 mb-5">
                 <div class="col">
                   <a
                     id="purchaseBtn"
-                    href="https://buy.stripe.com/bJebJ1ccUen5aQY0Uiasg02"
+                    href="#"
                     class="btn btn-dark btn-hov py-2 rounded-0 border-2 w-50"
+                    target="_blank"
                     >PURCHASE NOW</a
                   >
                 </div>
@@ -244,6 +317,37 @@
         </div>
       </div>
     </div>
+    <!-- Sizes Links Script-->
+    <script>
+      // Map each size to its purchase link
+      const sizeLinks = {
+        btnradio1ss: "https://buy.stripe.com/00waEX1ygceX4sA6eCasg0a", // S
+        btnradio2ss: "https://buy.stripe.com/00waEX1ygceX4sA6eCasg0a", // M
+        btnradio3: "https://buy.stripe.com/00waEX1ygceX4sA6eCasg0a", // L
+        btnradio4: "https://buy.stripe.com/00waEX1ygceX4sA6eCasg0a", // XL
+        btnradio5: "https://buy.stripe.com/00waEX1ygceX4sA6eCasg0a", // XXL
+      };
+
+      const purchaseBtn = document.getElementById("purchaseBtn");
+      const radios = document.querySelectorAll("input[name='btnradio']");
+
+      purchaseBtn.addEventListener("click", function (e) {
+        e.preventDefault(); // prevent default anchor action
+        let selectedSize = null;
+
+        radios.forEach((radio) => {
+          if (radio.checked) {
+            selectedSize = radio.id;
+          }
+        });
+
+        if (selectedSize && sizeLinks[selectedSize]) {
+          window.location.href = sizeLinks[selectedSize]; // redirect
+        } else {
+          alert("Please select a size before purchasing!");
+        }
+      });
+    </script>
 
     <!-- Instagram Profile -->
     <section class="py-4">
@@ -270,7 +374,7 @@
                   <i class="ri-checkbox-circle-fill ri-sm ms-2"></i>
                 </h4>
                 <p class="mb-0">
-                  PONDER is a sustainable art brand that creates .
+                  PONDER is a sustainable fashion brand that creates .
                 </p>
                 <p class="mb-0">PONDER the world around you .</p>
 
